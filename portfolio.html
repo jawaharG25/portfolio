@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa; /* very light gray */
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    
+    nav {
+      background-color: #ffffff;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      z-index: 100;
+    }
+
+    nav a {
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+
+   
+    .about {
+      text-align: center;
+    }
+
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+  
+    .resume a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .resume a:hover {
+      background-color: #0056b3;
+    }
+
+ 
+   .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project {
+  background-color: #ffffff;
+  border-left: 4px solid #007BFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.project p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 14.5px;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+    .skill-category {
+  margin-bottom: 30px;
+}
+
+.skill-category h3 {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 18px;
+  border-left: 4px solid #007BFF;
+  padding-left: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill {
+  background-color: #e3f2fd; /* light blue background */
+  color: #0d47a1;             /* darker blue text */
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid #bbdefb;
+  transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: #bbdefb;
+  cursor: default;
+}
+
+
+   
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #ffffff;
+      color: #555;
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+ 
+  <section id="about" class="about">
+    <img src="ph1.jpg" alt="Profile Picture">
+    <h2>About Me</h2>
+    <p>Hi, I'm Jawahar G, a passionate and motivated Computer Science Engineering graduate with a strong interest in building modern, user-friendly web applications. I enjoy working with technologies like Python, Machine Learning, and Frontend Development (HTML, CSS, JavaScript). I'm always eager to learn new tools and frameworks, and I love solving real-world problems through code. My goal is to grow as a full-stack developer while contributing to impactful tech projects.</p>
+  </section>
+
+  
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <p>Download my resume below:</p>
+    <a href="resume.pdf" download>Download Resume</a>
+  </section>
+
+  
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-list">
+    
+    <!-- Project 1 -->
+    <div class="project">
+      <h3>Job Portal (Full Stack)</h3>
+      <p>
+        Developed a job portal application using <strong>Java Spring Boot, MongoDB, Swagger, and React</strong>, 
+        designed to connect job seekers with employers. The app enables employers to post jobs and allows job 
+        seekers to search and apply effectively.
+      </p>
+      <p><strong>Tech Stack:</strong> Java, Spring Boot, MongoDB, React, Swagger</p>
+      <a href="https://github.com/jawaharG25/Java-Full-Stack-100days" target="_blank">🔗 GitHub / Demo Link</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <h3>Anime E-commerce Website (Frontend)</h3>
+      <p>
+        Built a visually appealing and user-friendly e-commerce website focused on anime merchandise. 
+        Implemented the frontend using <strong>HTML and CSS</strong> with a responsive layout, engaging product displays, 
+        and optimized performance across devices.
+      </p>
+      <p><strong>Tech Stack:</strong> HTML, CSS</p>
+      <a href="#" target="_blank">🔗 GitHub / Demo Link</a>
+    </div>
+
+  </div>
+</section>
+
+
+ 
+<section id="skills">
+  <h2>Skills</h2>
+  
+  <div class="skill-category">
+    <h3>Programming Languages</h3>
+    <div class="skills-list">
+      <div class="skill">Python</div>
+      <div class="skill">C</div>
+      <div class="skill">Java</div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>Web Development</h3>
+    <div class="skills-list">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Responsive Design</div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>Tools & Technologies</h3>
+    <div class="skills-list">
+      <div class="skill">Git</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">Firebase</div>
+      <div class="skill">VS Code</div>
+    </div>
+  </div>
+</section>
+
+
+  
+  <footer>
+    &copy; 2025 My Portfolio. All rights reserved.
+  </footer>
+
+</body>
+</html>
